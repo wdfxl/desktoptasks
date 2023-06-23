@@ -1,0 +1,10 @@
+[Unit]
+Description=Checks for update requests from desktop player
+Wants=desktop-updater-periodic.timer
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/desktoptasks/updater.sh
+
+[Install]
+WantedBy=multi-user.target

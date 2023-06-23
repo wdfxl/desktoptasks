@@ -1,0 +1,13 @@
+[Unit]
+Description=Run desktop update checker
+Requires=desktop-updater.service
+
+[Timer]
+Unit=desktop-updater.service
+OnUnitInactiveSec=10m
+RandomizedDelaySec=3m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
+

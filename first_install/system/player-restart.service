@@ -1,0 +1,9 @@
+[Unit]
+Description = Restart player once after boot
+
+[Service]
+Type = oneshot
+ExecStart = /opt/desktoptasks/restart.sh
+
+[Install]
+WantedBy = multi-user.target
