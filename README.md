@@ -1,1 +1,1 @@
-# zberzvuk
+# sberzvuk
